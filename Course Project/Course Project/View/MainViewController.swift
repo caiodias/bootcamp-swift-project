@@ -9,7 +9,7 @@
 import UIKit
 
 class MainViewController: UITableViewController {
-    private let projects: [String] = ["ProDigi",]
+    private let projects: [String] = ["ProDigi","Harsh"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
