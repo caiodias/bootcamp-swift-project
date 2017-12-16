@@ -43,6 +43,8 @@ class MainViewController: UITableViewController {
         switch indexPath.row {
         case 0:
             segueId = "showProDigiScreen"
+        case 1:
+            segueId = "showHarshScreen"
         default:
             print("No specific action.")
         }
