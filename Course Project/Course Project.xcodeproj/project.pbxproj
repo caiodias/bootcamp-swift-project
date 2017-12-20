@@ -19,6 +19,7 @@
 		9529AC531FB3B2EE000C9BDC /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC521FB3B2EE000C9BDC /* ExampleViewController.swift */; };
 		9529AC561FB3B7D9000C9BDC /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9529AC551FB3B7D9000C9BDC /* PersonCell.xib */; };
 		9529AC581FB3B7E3000C9BDC /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC571FB3B7E3000C9BDC /* PersonCell.swift */; };
+		EB5BD2C71FEA19340079E0DC /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5BD2C61FEA19340079E0DC /* Blog.swift */; };
 		EBCC5C481FDB03C500AB5C42 /* MarcelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCC5C471FDB03C500AB5C42 /* MarcelViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		9529AC521FB3B2EE000C9BDC /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		9529AC551FB3B7D9000C9BDC /* PersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
 		9529AC571FB3B7E3000C9BDC /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		EB5BD2C61FEA19340079E0DC /* Blog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
 		EBCC5C471FDB03C500AB5C42 /* MarcelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarcelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				9529AC441FB3A20A000C9BDC /* Person.swift */,
+				EB5BD2C61FEA19340079E0DC /* Blog.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				9529AC451FB3A20A000C9BDC /* Person.swift in Sources */,
 				9529AC341FB392A3000C9BDC /* MainViewController.swift in Sources */,
 				9529AC321FB392A3000C9BDC /* AppDelegate.swift in Sources */,
+				EB5BD2C71FEA19340079E0DC /* Blog.swift in Sources */,
 				9529AC531FB3B2EE000C9BDC /* ExampleViewController.swift in Sources */,
 				9529AC581FB3B7E3000C9BDC /* PersonCell.swift in Sources */,
 			);
