@@ -7,19 +7,20 @@
 //
 
 import UIKit
+import Foundation
 
-class BlogViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class BlogViewController: UIViewController, UITableViewDataSource {
 
-    
-
-    @IBOutlet weak var TableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
     var blog: Blog!
+    var dataService = BlogController.sharedInstance
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.TableView.delegate = self
-        self.TableView.dataSource = self
+//        self.tableView.delegate = self
+        self.tableView.dataSource = self
         
 
         BlogController.sharedInstance.fetchListInfo(onSuccess: onSuccessScenario, onFail: onFailScenario)
@@ -29,28 +30,83 @@ class BlogViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Call the main thread to do the next line code to avoid any thread conflict
         DispatchQueue.main.async {
             // Force reload the table view data
-            self.TableView.reloadData()
+            self.tableView.reloadData()
         }
     }
     
-    // This method will be called when fetchListInfo from Controller is finished with fail scenario
     private func onFailScenario(errorMessage: String) {
         print(errorMessage)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
- 
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
     }
+        
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return BlogController.sharedInstance.list.count
+        }
+        
+//        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+////            let blog = BlogController.sharedInstance.list[indexPath.row]
+////            let rawCell = Bundle.main.loadNibNamed("BlogCell", owner: BlogCell, options: <#T##[AnyHashable : Any]?#>)
+//            if let cell = tableView.dequeueReusableCell(withIdentifier: "BlogCell", for: indexPath) as? BlogCell {
+//                cell.configureCell(blog: dataService.list[indexPath.row])
+//                return cell
+//            } else {
+//                return UITableViewCell()
+//            }
+//
+//        }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return TableView.cellForRow(at: indexPath)!
+        let blog = BlogController.sharedInstance.list[indexPath.row]
+        let rawCell = Bundle.main.loadNibNamed("BlogCell", owner: BlogCell.self, options: nil)?.first
+        
+        guard let blogCell = rawCell as? BlogCell else {
+            print("Not possible convert the cell to PersonCell")
+            return rawCell as! UITableViewCell
+        }
+        
+        blogCell.configureCell(blog: blog)
+        
+        return blogCell
     }
 
+        
+//      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let blog = BlogController.sharedInstance.list[indexPath.row]
+//
+//        }
+    
+    
 }
+
+
+
+
+
+    
+//    // This method will be called when fetchListInfo from Controller is finished with fail scenario
+//    private func onFailScenario(errorMessage: String) {
+//        print(errorMessage)
+//    }
+//
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//        // Dispose of any resources that can be recreated.
+//    }
+//
+//
+//
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 0
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        return TableView.cellForRow(at: indexPath)!
+//    }
+//
+//}
+

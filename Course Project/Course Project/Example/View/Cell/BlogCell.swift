@@ -20,5 +20,7 @@ class BlogCell: UITableViewCell {
         date.text = "\(blog.dateReleased)"
         link.text = "\(blog.link)"
     }
+    
+
 
 }
