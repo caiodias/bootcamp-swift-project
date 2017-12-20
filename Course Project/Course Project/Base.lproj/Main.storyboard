@@ -45,7 +45,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="79" id="KGh-23-kNv">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="79" id="KGh-23-kNv" customClass="BlogCell" customModule="Course_Project" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="79"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KGh-23-kNv" id="BzX-R8-EzK">
@@ -82,6 +82,11 @@
                                                 <constraint firstItem="WDb-sB-zsY" firstAttribute="top" secondItem="BzX-R8-EzK" secondAttribute="top" id="nmU-es-Afh"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="date" destination="0DO-Ix-bjr" id="5Av-5v-L57"/>
+                                            <outlet property="link" destination="b0W-hM-i7k" id="DJD-Ub-bxs"/>
+                                            <outlet property="title" destination="q0k-8f-00V" id="1Rd-mK-AZS"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -95,6 +100,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="l3W-JZ-HKN"/>
                     </view>
+                    <connections>
+                        <outlet property="TableView" destination="5s1-BO-KXC" id="uIF-r8-wml"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RBZ-8t-MvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
