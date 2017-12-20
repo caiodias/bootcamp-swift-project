@@ -19,6 +19,7 @@
 		9529AC531FB3B2EE000C9BDC /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC521FB3B2EE000C9BDC /* ExampleViewController.swift */; };
 		9529AC561FB3B7D9000C9BDC /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9529AC551FB3B7D9000C9BDC /* PersonCell.xib */; };
 		9529AC581FB3B7E3000C9BDC /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC571FB3B7E3000C9BDC /* PersonCell.swift */; };
+		D8BD405E1FEB02F1002F6C36 /* HarshScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BD405D1FEB02F1002F6C36 /* HarshScreenController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		9529AC521FB3B2EE000C9BDC /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		9529AC551FB3B7D9000C9BDC /* PersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
 		9529AC571FB3B7E3000C9BDC /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		D8BD405D1FEB02F1002F6C36 /* HarshScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarshScreenController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				9529AC331FB392A3000C9BDC /* MainViewController.swift */,
 				9529AC4A1FB3AB57000C9BDC /* Cell */,
+				D8BD405D1FEB02F1002F6C36 /* HarshScreenController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8BD405E1FEB02F1002F6C36 /* HarshScreenController.swift in Sources */,
 				9529AC481FB3A58E000C9BDC /* PersonController.swift in Sources */,
 				9529AC4E1FB3AC48000C9BDC /* DefaultButtonCell.swift in Sources */,
 				9529AC451FB3A20A000C9BDC /* Person.swift in Sources */,
