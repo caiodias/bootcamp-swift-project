@@ -67,13 +67,17 @@ class HarshScreenController: UITableViewController {
 }
 extension HarshScreenController{
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tbl.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as UITableViewCell
+        
+        cell.textLabel?.text = self.tableArray[indexPath.row]
+        
+        return cell
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return self.tableArray.count
     }
     override func numberOfSections(in tableView: UITableView) -> Int {
-        <#code#>
+        return 1
     }
     
 }
