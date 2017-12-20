@@ -9,7 +9,7 @@
 import Foundation
 
 
-public class Blog {
+public class Blog: NSObject{
     public let title: String
     public let dateReleased: String
     public let link: String

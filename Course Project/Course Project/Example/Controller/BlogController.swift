@@ -11,13 +11,11 @@ import Foundation
 import SystemConfiguration
 import Foundation
 
-//typealias SuccessScenario = () -> Void
-//typealias FailScenario = (String) -> Void
 
 final class BlogController {
-    public private(set) var list: [Blog]
+    public private(set) var list : [Blog]
     public static let sharedInstance = BlogController()
-    public var selectedUser: Person? = nil
+    public var selectedUser: Blog? = nil
     private let url: String = "https://blog.marcelharvan.com/wp-json/wp/v2/posts"
     
     private init() {
@@ -58,28 +56,41 @@ final class BlogController {
     
       private func convertToBlog(withData data: Data) throws -> [Blog] {
         var tempList = [Blog]()
+       
         
-        let json = try! JSONSerialization.jsonObject(with: data, options: []) as! [String:Any]
+        let json = try! JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+
         
-        if let results = json.values as? [[String:Any]]{
+        
+        if let results = json as? [Dictionary<String,AnyObject>] {
             for jsonBlog in results {
-                guard let title = jsonBlog["rendered"] as? String
+                
+                guard let date = jsonBlog["date"] as? String,
+                let link = jsonBlog["link"] as? String,
+                let title = jsonBlog["title"] as? [String:Any],
+                let title1 = title["rendered"] as? String
                 
                     else {
                         print("Not possible to find the Blog.")
                         break
                 }
                 
-                tempList.append(Blog(title: title, dateReleased: "", link: ""))
+                tempList.append(Blog(title: title1, dateReleased: date, link: link))
                 print("\(tempList)")
+                print("\(title1)")
+                print("The date is \(date)")
+                print("The link is \(link)")
+                
             }
         } else {
         
         print("No results tag found in response JSON.")
-        
-    }
+        }
+          
         return tempList
-    }
+            }
+        
+     
 }
 
 

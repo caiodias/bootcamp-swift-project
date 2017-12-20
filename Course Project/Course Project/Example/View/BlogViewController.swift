@@ -22,7 +22,20 @@ class BlogViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.TableView.dataSource = self
         
 
-        // Do any additional setup after loading the view.
+        BlogController.sharedInstance.fetchListInfo(onSuccess: onSuccessScenario, onFail: onFailScenario)
+    }
+    
+    private func onSuccessScenario() {
+        // Call the main thread to do the next line code to avoid any thread conflict
+        DispatchQueue.main.async {
+            // Force reload the table view data
+            self.TableView.reloadData()
+        }
+    }
+    
+    // This method will be called when fetchListInfo from Controller is finished with fail scenario
+    private func onFailScenario(errorMessage: String) {
+        print(errorMessage)
     }
 
     override func didReceiveMemoryWarning() {
