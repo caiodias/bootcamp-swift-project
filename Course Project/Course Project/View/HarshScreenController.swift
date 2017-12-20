@@ -9,11 +9,13 @@
 import UIKit
 
 class HarshScreenController: UITableViewController {
+     var tableArray = [String] ()
     @IBOutlet var tbl: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.tbl.dataSource = self
+        self.tbl.delegate = self
         // Do any additional setup after loading the view.
     }
 
