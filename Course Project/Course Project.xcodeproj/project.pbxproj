@@ -20,6 +20,7 @@
 		9529AC561FB3B7D9000C9BDC /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9529AC551FB3B7D9000C9BDC /* PersonCell.xib */; };
 		9529AC581FB3B7E3000C9BDC /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC571FB3B7E3000C9BDC /* PersonCell.swift */; };
 		EB0AC1E81FEAF1D300A953E4 /* BlogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0AC1E71FEAF1D300A953E4 /* BlogCell.swift */; };
+		EB0AC1EA1FEAF6D800A953E4 /* BlogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0AC1E91FEAF6D800A953E4 /* BlogController.swift */; };
 		EB5BD2C71FEA19340079E0DC /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5BD2C61FEA19340079E0DC /* Blog.swift */; };
 		EB5BD2C91FEA1F350079E0DC /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5BD2C81FEA1F350079E0DC /* BlogViewController.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		9529AC551FB3B7D9000C9BDC /* PersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
 		9529AC571FB3B7E3000C9BDC /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		EB0AC1E71FEAF1D300A953E4 /* BlogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogCell.swift; sourceTree = "<group>"; };
+		EB0AC1E91FEAF6D800A953E4 /* BlogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogController.swift; sourceTree = "<group>"; };
 		EB5BD2C61FEA19340079E0DC /* Blog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
 		EB5BD2C81FEA1F350079E0DC /* BlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				9529AC471FB3A58E000C9BDC /* PersonController.swift */,
+				EB0AC1E91FEAF6D800A953E4 /* BlogController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				9529AC321FB392A3000C9BDC /* AppDelegate.swift in Sources */,
 				EB5BD2C91FEA1F350079E0DC /* BlogViewController.swift in Sources */,
 				EB5BD2C71FEA19340079E0DC /* Blog.swift in Sources */,
+				EB0AC1EA1FEAF6D800A953E4 /* BlogController.swift in Sources */,
 				9529AC531FB3B2EE000C9BDC /* ExampleViewController.swift in Sources */,
 				9529AC581FB3B7E3000C9BDC /* PersonCell.swift in Sources */,
 			);

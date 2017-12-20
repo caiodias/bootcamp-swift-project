@@ -33,11 +33,11 @@ class BlogViewController: UIViewController, UITableViewDelegate, UITableViewData
  
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return
+        return TableView.cellForRow(at: indexPath)!
     }
 
 }
