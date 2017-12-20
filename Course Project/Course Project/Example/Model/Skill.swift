@@ -18,7 +18,7 @@ public class Skill {
     }
     
     public func returnType() -> String {
-        return "Harsh Knows\(self.type) "
+        return "Harsh Knows \(self.type) "
     }
 }
 

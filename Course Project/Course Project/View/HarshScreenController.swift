@@ -91,14 +91,22 @@ extension HarshScreenController{
             print(self.tableArray)
         }
         
-        let share = UITableViewRowAction(style: .default, title: "Share") { (action, indexPath) in
+        let more = UITableViewRowAction(style: .default, title: "More") { (action, indexPath) in
             // share item at indexPath
-            print("I want to share: \(self.tableArray[indexPath.row])")
+            print("I know: \(self.tableArray[indexPath.row])")
+            let skill = Skill(type: self.tableArray[indexPath.row])
+            let alertController = UIAlertController(
+                title:"\(skill.type)",message: skill.returnType(), preferredStyle: .alert)
+            
+            let okAction = UIAlertAction(title: "Ok", style: .default, handler:nil)
+            alertController.addAction(okAction)
+            
+            self.present(alertController, animated: true, completion: nil)
         }
         
-        share.backgroundColor = UIColor.lightGray
+        more.backgroundColor = UIColor.lightGray
         
-        return [delete, share]
+        return [delete, more]
         
     }
 }
