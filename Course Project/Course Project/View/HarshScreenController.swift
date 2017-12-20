@@ -79,5 +79,9 @@ extension HarshScreenController{
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(self.tableArray[indexPath.row])
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
     
 }
