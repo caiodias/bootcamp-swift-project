@@ -83,5 +83,7 @@ extension HarshScreenController{
         print(self.tableArray[indexPath.row])
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        <#code#>
+    }
 }
