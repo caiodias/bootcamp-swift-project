@@ -35,48 +35,7 @@
         <!--View Controller-->
         <scene sceneID="AT2-mX-wMl">
             <objects>
-                <viewController id="Kfs-NQ-46Z" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DMI-Lp-sc0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ravi" translatesAutoresizingMaskIntoConstraints="NO" id="gVv-8o-jjC">
-                                <rect key="frame" x="0.0" y="64" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="mRZ-eh-xsp"/>
-                                    <constraint firstAttribute="width" constant="30" id="nVs-k0-ZWF"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Harsh Shah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJe-Zm-AIg">
-                                <rect key="frame" x="50" y="114" width="126" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mobile/Wearable App Developer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKK-g1-lXT">
-                                <rect key="frame" x="83" y="143" width="251" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ask me about Counter++ Application, and have fun to play falppy bird replica developed by me " translatesAutoresizingMaskIntoConstraints="NO" id="bLA-h1-cyt">
-                                <rect key="frame" x="67" y="258" width="276" height="107"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="gVv-8o-jjC" firstAttribute="leading" secondItem="ajx-2m-q6f" secondAttribute="leading" id="syU-Ny-gpv"/>
-                            <constraint firstItem="gVv-8o-jjC" firstAttribute="top" secondItem="ajx-2m-q6f" secondAttribute="top" id="yXU-gc-lce"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="ajx-2m-q6f"/>
-                    </view>
-                </viewController>
+                <viewController id="Kfs-NQ-46Z" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l8X-ot-0wX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1864.8" y="148.87556221889056"/>
@@ -129,7 +88,4 @@
             <point key="canvasLocation" x="-334" y="-267"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Ravi" width="400" height="400"/>
-    </resources>
 </document>
