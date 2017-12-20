@@ -20,7 +20,7 @@
 		9529AC561FB3B7D9000C9BDC /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9529AC551FB3B7D9000C9BDC /* PersonCell.xib */; };
 		9529AC581FB3B7E3000C9BDC /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9529AC571FB3B7E3000C9BDC /* PersonCell.swift */; };
 		EB5BD2C71FEA19340079E0DC /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5BD2C61FEA19340079E0DC /* Blog.swift */; };
-		EBCC5C481FDB03C500AB5C42 /* MarcelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCC5C471FDB03C500AB5C42 /* MarcelViewController.swift */; };
+		EB5BD2C91FEA1F350079E0DC /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5BD2C81FEA1F350079E0DC /* BlogViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +39,7 @@
 		9529AC551FB3B7D9000C9BDC /* PersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
 		9529AC571FB3B7E3000C9BDC /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		EB5BD2C61FEA19340079E0DC /* Blog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
-		EBCC5C471FDB03C500AB5C42 /* MarcelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarcelViewController.swift; sourceTree = "<group>"; };
+		EB5BD2C81FEA1F350079E0DC /* BlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				9529AC521FB3B2EE000C9BDC /* ExampleViewController.swift */,
-				EBCC5C471FDB03C500AB5C42 /* MarcelViewController.swift */,
+				EB5BD2C81FEA1F350079E0DC /* BlogViewController.swift */,
 				9529AC541FB3B7CC000C9BDC /* Cell */,
 			);
 			path = View;
@@ -221,12 +221,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBCC5C481FDB03C500AB5C42 /* MarcelViewController.swift in Sources */,
 				9529AC481FB3A58E000C9BDC /* PersonController.swift in Sources */,
 				9529AC4E1FB3AC48000C9BDC /* DefaultButtonCell.swift in Sources */,
 				9529AC451FB3A20A000C9BDC /* Person.swift in Sources */,
 				9529AC341FB392A3000C9BDC /* MainViewController.swift in Sources */,
 				9529AC321FB392A3000C9BDC /* AppDelegate.swift in Sources */,
+				EB5BD2C91FEA1F350079E0DC /* BlogViewController.swift in Sources */,
 				EB5BD2C71FEA19340079E0DC /* Blog.swift in Sources */,
 				9529AC531FB3B2EE000C9BDC /* ExampleViewController.swift in Sources */,
 				9529AC581FB3B7E3000C9BDC /* PersonCell.swift in Sources */,

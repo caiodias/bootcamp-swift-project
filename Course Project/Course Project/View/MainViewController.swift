@@ -44,7 +44,7 @@ class MainViewController: UITableViewController {
         case 0:
             segueId = "showProDigiScreen"
         case 1:
-            segueId = "showMarcelScreen"
+            segueId = "showBlogScreen"
         default:
             print("No specific action.")
         }

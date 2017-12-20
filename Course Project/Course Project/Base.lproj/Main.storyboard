@@ -26,17 +26,17 @@
                     <navigationItem key="navigationItem" title="Projects" id="s9I-YZ-e41"/>
                     <connections>
                         <segue destination="agh-ms-bEh" kind="show" identifier="showProDigiScreen" id="eqB-q2-mBa"/>
-                        <segue destination="eFt-7l-a3m" kind="show" identifier="showMarcelScreen" id="pLT-eZ-WFL"/>
+                        <segue destination="eFt-7l-a3m" kind="show" identifier="showBlogScreen" id="pLT-eZ-WFL"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oXb-zb-V29" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="703" y="-268"/>
         </scene>
-        <!--Marcel View Controller-->
+        <!--Blog View Controller-->
         <scene sceneID="CZW-F8-9Dg">
             <objects>
-                <viewController id="eFt-7l-a3m" customClass="MarcelViewController" customModule="Course_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eFt-7l-a3m" customClass="BlogViewController" customModule="Course_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dQj-K9-tIU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
